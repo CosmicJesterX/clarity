@@ -1,0 +1,118 @@
+From 7151fc613fe1eec044d938bce39d08abd9624007 Mon Sep 17 00:00:00 2001
+From: "dependabot[bot]" <49699333+dependabot[bot]@users.noreply.github.com>
+Date: Sat, 15 Nov 2025 23:13:15 +0000
+Subject: [PATCH] Bump @eslint/compat from 1.4.1 to 2.0.0
+
+Bumps [@eslint/compat](https://github.com/eslint/rewrite/tree/HEAD/packages/compat) from 1.4.1 to 2.0.0.
+- [Release notes](https://github.com/eslint/rewrite/releases)
+- [Changelog](https://github.com/eslint/rewrite/blob/main/packages/compat/CHANGELOG.md)
+- [Commits](https://github.com/eslint/rewrite/commits/compat-v2.0.0/packages/compat)
+
+---
+updated-dependencies:
+- dependency-name: "@eslint/compat"
+  dependency-version: 2.0.0
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+---
+ package-lock.json | 43 +++++++++++++++++++++++++++++++++----------
+ package.json      |  2 +-
+ 2 files changed, 34 insertions(+), 11 deletions(-)
+
+diff --git a/package-lock.json b/package-lock.json
+index a41bb54..84e3e67 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -13,7 +13,7 @@
+         "@actions/github": "^6.0.1"
+       },
+       "devDependencies": {
+-        "@eslint/compat": "^1.4.1",
++        "@eslint/compat": "^2.0.0",
+         "@jest/globals": "^30.2.0",
+         "@rollup/plugin-commonjs": "^28.0.6",
+         "@rollup/plugin-node-resolve": "^16.0.3",
+@@ -672,15 +672,15 @@
+       }
+     },
+     "node_modules/@eslint/compat": {
+-      "version": "1.4.1",
+-      "resolved": "https://registry.npmjs.org/@eslint/compat/-/compat-1.4.1.tgz",
+-      "integrity": "sha512-cfO82V9zxxGBxcQDr1lfaYB7wykTa0b00mGa36FrJl7iTFd0Z2cHfEYuxcBRP/iNijCsWsEkA+jzT8hGYmv33w==",
++      "version": "2.0.0",
++      "resolved": "https://registry.npmjs.org/@eslint/compat/-/compat-2.0.0.tgz",
++      "integrity": "sha512-T9AfE1G1uv4wwq94ozgTGio5EUQBqAVe1X9qsQtSNVEYW6j3hvtZVm8Smr4qL1qDPFg+lOB2cL5RxTRMzq4CTA==",
+       "dev": true,
+       "dependencies": {
+-        "@eslint/core": "^0.17.0"
++        "@eslint/core": "^1.0.0"
+       },
+       "engines": {
+-        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
++        "node": "^20.19.0 || ^22.13.0 || >=24"
+       },
+       "peerDependencies": {
+         "eslint": "^8.40 || 9"
+@@ -691,6 +691,18 @@
+         }
+       }
+     },
++    "node_modules/@eslint/compat/node_modules/@eslint/core": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.0.0.tgz",
++      "integrity": "sha512-PRfWP+8FOldvbApr6xL7mNCw4cJcSTq4GA7tYbgq15mRb0kWKO/wEB2jr+uwjFH3sZvEZneZyCUGTxsv4Sahyw==",
++      "dev": true,
++      "dependencies": {
++        "@types/json-schema": "^7.0.15"
++      },
++      "engines": {
++        "node": "^20.19.0 || ^22.13.0 || >=24"
++      }
++    },
+     "node_modules/@eslint/config-array": {
+       "version": "0.21.1",
+       "resolved": "https://registry.npmjs.org/@eslint/config-array/-/config-array-0.21.1.tgz",
+@@ -9816,12 +9828,23 @@
+       "dev": true
+     },
+     "@eslint/compat": {
+-      "version": "1.4.1",
+-      "resolved": "https://registry.npmjs.org/@eslint/compat/-/compat-1.4.1.tgz",
+-      "integrity": "sha512-cfO82V9zxxGBxcQDr1lfaYB7wykTa0b00mGa36FrJl7iTFd0Z2cHfEYuxcBRP/iNijCsWsEkA+jzT8hGYmv33w==",
++      "version": "2.0.0",
++      "resolved": "https://registry.npmjs.org/@eslint/compat/-/compat-2.0.0.tgz",
++      "integrity": "sha512-T9AfE1G1uv4wwq94ozgTGio5EUQBqAVe1X9qsQtSNVEYW6j3hvtZVm8Smr4qL1qDPFg+lOB2cL5RxTRMzq4CTA==",
+       "dev": true,
+       "requires": {
+-        "@eslint/core": "^0.17.0"
++        "@eslint/core": "^1.0.0"
++      },
++      "dependencies": {
++        "@eslint/core": {
++          "version": "1.0.0",
++          "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.0.0.tgz",
++          "integrity": "sha512-PRfWP+8FOldvbApr6xL7mNCw4cJcSTq4GA7tYbgq15mRb0kWKO/wEB2jr+uwjFH3sZvEZneZyCUGTxsv4Sahyw==",
++          "dev": true,
++          "requires": {
++            "@types/json-schema": "^7.0.15"
++          }
++        }
+       }
+     },
+     "@eslint/config-array": {
+diff --git a/package.json b/package.json
+index 0774f1c..f1244b9 100644
+--- a/package.json
++++ b/package.json
+@@ -42,7 +42,7 @@
+     "@actions/github": "^6.0.1"
+   },
+   "devDependencies": {
+-    "@eslint/compat": "^1.4.1",
++    "@eslint/compat": "^2.0.0",
+     "@jest/globals": "^30.2.0",
+     "@rollup/plugin-commonjs": "^28.0.6",
+     "@rollup/plugin-node-resolve": "^16.0.3",
